@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Planutre | Simulador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+    }
+
+    .left, .right {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .left {
+      background: white;
+    }
+
+    .right {
+      background: #0b3d2e;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #00c853;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    @media(max-width: 800px){
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left">
+    <h1>💸 Você pode estar perdendo R$ por arroba sem saber</h1>
+    <p>Faça uma simulação rápida e descubra oportunidades de ganho no seu sistema.</p>
+
+    <a class="btn" href="href="https://calculadoraplanutre.web.app"">
+      Fazer simulação agora
+    </a>
+  </div>
+
+  <div class="right">
+
+    <div class="card">
+      <h2>📊 App Pasto</h2>
+      <p>Controle de consumo e eficiência da suplementação a pasto.</p>
+    </div>
+
+    <div class="card">
+      <h2>🏗 Systag Confinamento</h2>
+      <p>Gestão completa de confinamento e semiconfinamento.</p>
+    </div>
+
+    <div class="card">
+      <h2>📈 BI Connect</h2>
+      <p>Dados e indicadores para tomada de decisão.</p>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
