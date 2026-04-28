@@ -1,105 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Planutre | Simulador</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planutre | Simulador</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 100vh;
-    }
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
 
-    .left, .right {
-      flex: 1;
-      padding: 40px;
-    }
+.left {
+  flex: 1;
+  padding: 50px;
+  background: white;
+}
 
-    .left {
-      background: white;
-    }
+.right {
+  flex: 1;
+  background: #0b3d2e;
+  color: white;
+  padding: 50px;
+}
 
-    .right {
-      background: #0b3d2e;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+h1 {
+  font-size: 34px;
+}
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
+p {
+  font-size: 18px;
+}
 
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
+.btn {
+  display: inline-block;
+  background: #00c853;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 20px;
+}
 
-    .btn {
-      background: #00c853;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 6px;
-      display: inline-block;
-    }
+.section {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
 
-    .card {
-      margin-bottom: 20px;
-    }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
-    @media(max-width: 800px){
-      .container {
-        flex-direction: column;
-      }
-    }
-  </style>
+.card {
+  width: 280px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  background: #0b3d2e;
+  color: white;
+}
+
+@media(max-width: 800px){
+  .hero {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-
+<!-- HERO -->
+<div class="hero">
   <div class="left">
+    <img src="assets/logo.png" style="width:150px; margin-bottom:20px;">
+    
     <h1>💸 Você pode estar perdendo R$ por arroba sem saber</h1>
-    <p>Faça uma simulação rápida e descubra oportunidades de ganho no seu sistema.</p>
+    
+    <p>Simule seu sistema em menos de 1 minuto e descubra oportunidades de ganho na suplementação.</p>
 
-    <a class="btn" href="href=""https://calculadoraplanutre.web.app" target="_blank""">
+    <a class="btn" href="https://calculadoraplanutre.web.app" target="_blank">
       Fazer simulação agora
     </a>
   </div>
 
   <div class="right">
+    <h2>Tecnologia aplicada ao resultado</h2>
+    <p>Mais do que suplemento, a Planutre entrega gestão, dados e decisão no campo.</p>
+  </div>
+</div>
+
+<!-- TECNOLOGIA -->
+<div class="section">
+  <h2>Ferramentas que geram resultado</h2>
+
+  <div class="cards">
 
     <div class="card">
-      <h2>📊 App Pasto</h2>
+      <img src="assets/app-pasto.jpg">
+      <h3>App Pasto</h3>
       <p>Controle de consumo e eficiência da suplementação a pasto.</p>
     </div>
 
     <div class="card">
-      <h2>🏗 Systag Confinamento</h2>
-      <p>Gestão completa de confinamento e semiconfinamento.</p>
+      <img src="assets/systag.jpg">
+      <h3>Systag Confinamento</h3>
+      <p>Gestão completa para confinamento e semiconfinamento.</p>
     </div>
 
     <div class="card">
-      <h2>📈 BI Connect</h2>
-      <p>Dados e indicadores para tomada de decisão.</p>
+      <img src="assets/bi-connect.jpg">
+      <h3>BI Connect</h3>
+      <p>Indicadores e dados para tomada de decisão.</p>
     </div>
 
   </div>
+</div>
 
+<!-- COMO FUNCIONA -->
+<div class="section" style="background:#f0f0f0;">
+  <h2>Como funciona</h2>
+
+  <p>1. Informe seu sistema atual</p>
+  <p>2. Receba análise técnica imediata</p>
+  <p>3. Identifique oportunidades de ganho</p>
+</div>
+
+<!-- CTA FINAL -->
+<div class="footer">
+  <h2>Descubra agora seu potencial de ganho</h2>
+  <a class="btn" href="https://calculadoraplanutre.web.app" target="_blank">
+    Simular agora
+  </a>
 </div>
 
 </body>
